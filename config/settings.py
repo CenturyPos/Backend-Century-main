@@ -90,7 +90,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://century_db_user:3Qj4GADtPAlzLmBlTf1zJwtZkvNI3xfj@dpg-cmraorn109ks73fh6a80-a.oregon-postgres.render.com/century_db',
+        default='sqlite:///db.sqlite3',
         conn_max_age=600
     )
 }
